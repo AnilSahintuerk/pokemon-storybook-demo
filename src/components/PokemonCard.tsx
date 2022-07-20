@@ -18,7 +18,7 @@ export function PokemonCard({ name, types, src }: Props) {
       />
       <p className="text-xl">{name}</p>
       <div className="flex flex-row gap-2">
-        {types.map((type, index) => (
+        {types.map((type: string, index: number) => (
           <div
             key={index}
             className={`w-[75px] h-[35px] flex justify-center items-center rounded-3xl 
